@@ -1,0 +1,8 @@
+.item img {
+    width: 40px;
+    border-radius: 50px;
+}
+
+.item a.active {
+    color: black;
+}
