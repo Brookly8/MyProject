@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import {Route, BrowserRouter} from "react-router-dom";
+import {Route} from "react-router-dom";
 import News from "./Components/Navbar/News/News";
 import Music from "./Components/Navbar/Music/Music";
 import Settings from "./Components/Navbar/Settings/Settings";
@@ -10,6 +10,7 @@ import NavbarContainer from "./Components/Navbar/NavbarContainer";
 import UsersContainer from "./Components/Navbar/Users/UsersContainer";
 import ProfileContainer from "./Components/Profile/ProfileContainer";
 import HeaderContainer from "./Components/Header/HeaderContainer";
+import Login from "./Components/Login/Login";
 
 
 const App = () => {
@@ -19,10 +20,9 @@ const App = () => {
             <NavbarContainer/>
             <div className='app-wrapper-content'>
                 <Route path='/dialogs' render={() => <DialogsContainer/>}/>
-                <Route path='/profile/:userId?'
-                       render={() => <ProfileContainer/>}/>
-                <Route path='/users'
-                       render={() => <UsersContainer/>}/>
+                <Route path='/profile/:userId?' render={() => <ProfileContainer/>}/>
+                <Route path='/users' render={() => <UsersContainer/>}/>
+                <Route path='/login' render={() => <Login/>}/>
                 <Route path='/news' component={News}/>
                 <Route path='/music' component={Music}/>
                 <Route path='/settings' component={Settings}/>

@@ -1,6 +1,4 @@
 import {UsersAPI} from "../api/api";
-import {setFollowingProgress, unfollow} from "./Users-reducer";
-
 const SET_USERS_DATA = 'SET_USERS_DATA'
 
 let initialState = {
