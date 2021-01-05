@@ -49,7 +49,7 @@ export const setUserProfile = (profile) => ({type: SET_USER_PROFILE, profile})
 
 export const userProfileThunkCreator = (userId) => {
     return (dispatch) => {
-        if(!userId){userId=5}
+        if(!userId){userId=2}
         UsersAPI.userProfile(userId)
             .then(data => {
                 dispatch(setUserProfile(data))

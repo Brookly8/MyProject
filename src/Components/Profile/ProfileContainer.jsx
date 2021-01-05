@@ -25,4 +25,4 @@ let mapStateToProps=(state)=>({
     profile: state.ProfilePage.profile
 })
 let UrlDataComponent= withRouter(ProfileContainer)
-export default connect(mapStateToProps, {setUserProfile, userProfileThunkCreator})(UrlDataComponent)
+export default connect(mapStateToProps, {userProfileThunkCreator})(UrlDataComponent)
